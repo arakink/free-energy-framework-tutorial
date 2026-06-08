@@ -53,7 +53,7 @@ def simulate_phi(
         phi_prev = phi_values[index - 1]
         phi_values[index] = phi_prev + dt * dphi(phi_prev, u, v_p, sigma_u, sigma_p)
 
-    times = np.arange(dt, t_end + 0.5 * dt, dt)
+    times = np.arange(0.0, t_end, dt)
     return times, phi_values
 
 
