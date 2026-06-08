@@ -3,15 +3,38 @@ import matplotlib.pyplot as plt
 
 
 def normpdf(x: np.ndarray | float, mean: np.ndarray | float, sigma: float) -> np.ndarray:
+    """
+    正規分布の確率密度を計算する。
+
+    Args:
+        x: 確率密度を評価する値
+        mean: 正規分布の平均
+        sigma: 正規分布の標準偏差
+
+    Returns:
+        x における正規分布の確率密度
+    """
     coef = 1.0 / (np.sqrt(2.0 * np.pi) * sigma)
     return coef * np.exp(-0.5 * ((x - mean) / sigma) ** 2)
 
 
 def g(v: np.ndarray) -> np.ndarray:
+    """
+    サイズから期待される観測値を計算する生成関数。
+
+    Args:
+        v: サイズの値
+
+    Returns:
+        各サイズに対する期待観測値
+    """
     return v ** 2
 
 
 def main() -> None:
+    """
+    事後分布 p(v|u) を数値的に計算し、グラフとして保存する。
+    """
     v_p = 3.0
     sigma_p = 1.0
     sigma_u = 1.0
