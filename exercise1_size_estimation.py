@@ -8,7 +8,7 @@ def normpdf(x: np.ndarray | float, mean: np.ndarray | float, sigma: float) -> np
 
 
 def g(v: np.ndarray) -> np.ndarray:
-    return v**2
+    return v ** 2
 
 
 def main() -> None:
