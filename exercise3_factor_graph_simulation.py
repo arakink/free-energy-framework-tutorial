@@ -11,6 +11,21 @@ def simulate_factor_graph(
     dt: float,
     t_end: float,
 ) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
+    """
+    phi と予測誤差ノードを時間発展させて軌跡を計算する。
+
+    Args:
+        phi0: phi の初期値
+        u: 観測された光強度
+        v_p: サイズの事前平均
+        sigma_u: 観測ノイズの標準偏差
+        sigma_p: 事前分布の標準偏差
+        dt: 時間刻み
+        t_end: シミュレーション終了時刻
+
+    Returns:
+        時刻配列、phi の値、事前誤差、感覚誤差
+    """
     n_steps = int(t_end / dt)
     phi_values = np.zeros(n_steps)
     epsilon_u_values = np.zeros(n_steps)
@@ -39,6 +54,9 @@ def simulate_factor_graph(
 
 
 def main() -> None:
+    """
+    因子グラフ形式の推定ダイナミクスを計算し、軌跡を保存する。
+    """
     v_p = 3.0
     sigma_p = 1.0
     sigma_u = 1.0
