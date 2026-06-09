@@ -17,7 +17,7 @@ def dphi(phi: float, u: float, v_p: float, sigma_u: float, sigma_p: float) -> fl
         phi の時間変化量
     """
     prior_term = (v_p - phi) / sigma_p
-    sensory_term = ((u - phi**2) / sigma_u) * (2.0 * phi)
+    sensory_term = ((u - phi ** 2) / sigma_u) * (2.0 * phi)
     return prior_term + sensory_term
 
 

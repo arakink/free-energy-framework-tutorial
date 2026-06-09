@@ -55,7 +55,7 @@ def main() -> None:
     plt.ylabel("p(v|u)")
     plt.xlim(min_v, max_v)
     plt.tight_layout()
-    plt.savefig("posterior_size_plot.png", dpi=200)
+    plt.savefig("exercise1_posterior_size_plot.png", dpi=200)
     plt.show()
 
 
