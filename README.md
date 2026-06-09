@@ -76,3 +76,5 @@ PNG ファイルは `.gitignore` で除外しています。
 
 - Rafal Bogacz, *A tutorial on the free-energy framework for modelling perception and learning*
 - DOI: `10.1016/j.jmp.2015.11.003`
+- The original article is distributed under the Creative Commons Attribution 4.0 International License (CC BY 4.0).
+
