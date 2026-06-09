@@ -2,3 +2,4 @@
 pdf/*.pdf
 .venv/
 .mplconfig/
+.DS_Store
