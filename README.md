@@ -57,12 +57,6 @@ MPLBACKEND=Agg MPLCONFIGDIR=.mplconfig python exercise3_factor_graph_simulation.
 
 PNG ファイルは `.gitignore` で除外しています。
 
-## PDF 資料
-
-論文 PDF などの資料は `pdf/` フォルダに置けます。
-
-`pdf/*.pdf` は `.gitignore` で除外しているため、PDF ファイルは Git に追加されません。
-
 ## ドキュメント
 
 - `docs/exercise1_size_estimation.md`
@@ -70,11 +64,10 @@ PNG ファイルは `.gitignore` で除外しています。
 - `docs/exercise2_phi_simulation.md`
   - `F` の最大化、`dphi/dt = dF/dphi`、`phi` の時間発展
 - `docs/exercise3_factor_graph_simulation.md`
-  - 練習問題3の予測誤差ノード、式(13)(14)、練習問題2からの拡張
+  - 予測誤差ノード、式(13)(14)、因子グラフ形式での実装
 
 ## 参考文献
 
 - Rafal Bogacz, *A tutorial on the free-energy framework for modelling perception and learning*
 - DOI: `10.1016/j.jmp.2015.11.003`
 - The original article is distributed under the Creative Commons Attribution 4.0 International License (CC BY 4.0).
-
